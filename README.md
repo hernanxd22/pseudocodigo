@@ -1,0 +1,2 @@
+# pseudocodigo
+ejercicios de pseudocodigo
