@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	Definir num Como caracter;
+	definir num1 Como entero;
+	Escribir "ingresa una frase ";
+	Leer num;
+	num1=Longitud(num);
+	Si num1 = 6 Entonces
+		Escribir "es correcto";
+	SiNo
+		Escribir "es incorrecto";
+	Fin Si
+FinAlgoritmo

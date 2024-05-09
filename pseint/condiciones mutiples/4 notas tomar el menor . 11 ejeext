@@ -1,0 +1,21 @@
+Algoritmo sin_titulo
+	Definir num,x,min Como real;
+	Escribir "ingresa la nota el primer trabajo practico ";
+	Leer num;
+	Escribir "ingresa la nota del segundo trabajo practico ";
+	Leer num;
+	Escribir "ingresa la nota del tercer trabajo practico ";
+	Leer num;
+	Escribir "ingresa la nota del cuarto trabajo practico ";
+	Leer num;
+	x=0;
+	min<-999999999999999999999999999;
+	Si x>1 Entonces
+		num<-min;
+	SiNo
+		Si num<min Entonces
+			min<-num;
+		Fin Si
+	Fin Si
+	Escribir "la nota menor es ", min;
+FinAlgoritmo

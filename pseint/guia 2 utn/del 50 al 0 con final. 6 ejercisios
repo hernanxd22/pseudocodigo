@@ -1,0 +1,7 @@
+Algoritmo sin_titulo
+	Definir i Como Entero;
+	Para i<-50 Hasta 0 Con Paso -1 Hacer
+		Escribir i;
+	Fin Para
+	Escribir "finalizo la ejecucion muchos exitos";
+FinAlgoritmo

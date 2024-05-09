@@ -1,0 +1,37 @@
+Algoritmo sin_titulo
+	Definir usu,sem,festivo,turno Como Caracter;
+	Definir horas,i Como Entero;
+	Escribir "ingrese el nombre de usuario ";
+	Leer usu;
+	Escribir "ingrese el dia de la semana";
+	Leer sem;
+	Escribir "es festivo?";
+	Leer festivo;
+	Escribir "ingrese el turno(diurno,nocturno)";
+	Leer turno;
+	Escribir "ingrese la cantidad de horas trabajadas ";
+	Leer horas;
+	i=calu(sem,festivo,turno,horas);
+FinAlgoritmo
+Funcion a <- calu(sem,festivo,turno,horas)
+	Definir a,cal,cal1,cal2,cal3,cal4,cal5 Como Entero;
+	Si turno="diurno" Entonces
+		cal=horas*90;
+		Escribir "el monto total en el turno diurno es de ", cal ;
+	Fin Si
+	Si turno="nocturno" Entonces
+		cal1=horas*125;
+		Escribir "el monto total en el turno nocturno es de ", cal1 ;
+	Fin Si
+	Si festivo="si" y turno="diurno" Entonces
+		cal2=0.10*cal;
+		cal3=cal+cal2;
+		Escribir "el monto total con el 10% de incremento en el turno diurno es de ", cal3 ;
+	Fin Si
+	Si festivo="si" y turno="nocturno" Entonces
+		cal4=0.15*cal1;
+		cal5=cal1+cal4;
+		Escribir "el monto total con el 10% de incremento en el turno diurno es de ", cal5 ;
+	Fin Si
+Fin Funcion
+

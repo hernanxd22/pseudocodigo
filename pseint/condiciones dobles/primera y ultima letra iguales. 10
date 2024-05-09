@@ -1,0 +1,14 @@
+Algoritmo sin_titulo
+	Definir frase,frase1 Como Caracter;
+	Definir fra,i Como Entero;
+	Escribir "ingresa un frase";
+	Leer frase;
+	fra=Longitud(frase);
+	frase1=Subcadena(frase,i,1);
+	frase=Subcadena(frase,Longitud(frase),Longitud(frase));
+	Si frase1=frase Entonces
+		Escribir "correcto";
+	SiNo
+		Escribir "incorrecto ";
+	Fin Si
+FinAlgoritmo

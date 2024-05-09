@@ -1,0 +1,16 @@
+Funcion suma( num,num1 )
+	Definir a Como Entero;
+	a=num+num1;
+	Escribir "la suma de los 2 numeros ingresados es de ",a;
+Fin Funcion
+
+Algoritmo sin_titulo
+	Definir num,num1,a Como Entero;
+	Escribir "ingresa un numero para la suma";
+	Leer num;
+	Escribir "ingresa otro numero para la suma";
+	Leer num1;
+	suma(num,num1);
+FinAlgoritmo
+
+

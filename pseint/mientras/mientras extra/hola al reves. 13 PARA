@@ -1,0 +1,14 @@
+Algoritmo sin_titulo
+	Definir frase,a,b,c,d Como Caracter;
+	Definir i Como Entero;
+	Escribir "ingresa un frase ";
+	Leer frase;
+	i=Longitud(frase);
+	Para i<-1 Hasta 1 Con Paso 1 Hacer
+		a=Subcadena(frase,4,4);
+		b=Subcadena(frase,3,3);
+		c=Subcadena(frase,2,2);
+		d=Subcadena(frase,1,1);
+		Escribir  a,b,c,d Sin Saltar;
+	Fin Para
+FinAlgoritmo

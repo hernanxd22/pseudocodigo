@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	Definir num,num1 Como Entero;
+	Escribir "ingresa un numero para el ejercisio ";
+	Leer num;
+	Escribir "ingresa otro numero para el ejercisio ";
+	Leer num1;
+	Si num MOD 2=0 y num1 MOD 2=0 Entonces
+		Escribir "Ambos numeros son pares ";
+	SiNo
+		Escribir "Los números no son pares, o uno de ellos no es par ";	
+	Fin Si
+FinAlgoritmo

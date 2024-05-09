@@ -1,0 +1,15 @@
+Algoritmo sin_titulo
+	Definir frase Como Caracter;
+	Escribir "ingresa la frase que desea con espacio";
+	Leer frase;
+	suma(frase);
+FinAlgoritmo
+SubProceso suma(frase)
+	Definir a,i Como Entero;
+	definir letra Como Caracter;
+	a=longitud(frase);
+	Para i<-0 Hasta a Con Paso 1 Hacer
+		letra=Subcadena(frase,i,i);
+		Escribir " ",letra ," "Sin Saltar;
+	Fin Para
+FinSubProceso

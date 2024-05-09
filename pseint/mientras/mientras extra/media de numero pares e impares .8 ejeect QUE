@@ -1,0 +1,25 @@
+Algoritmo sin_titulo
+	Definir num,cont,cont1,cont2,cont3,cont5,cal,cal1 Como real;
+	Repetir
+		
+		Escribir "ingresa un numero ";
+		Leer num;
+		cont5<-cont5+1;
+		Escribir cont5;
+		Si num MOD 2=0 Entonces
+			cont<-cont+1;
+			Escribir cont;
+			cont1<-cont1+num;
+			Escribir cont1;
+		SiNo
+			cont2<-cont2+1;
+			Escribir cont2;
+			cont3<-cont3+num;
+			Escribir cont3;
+		Fin Si
+	Hasta Que cont5=10;
+	cal=cont1/cont;
+	Escribir "la media de numero pares es de ",cal;
+	cal1=cont3/cont2;
+	Escribir "la media de numeros impares es de ", cal1;
+FinAlgoritmo

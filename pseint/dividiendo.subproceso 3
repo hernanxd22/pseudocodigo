@@ -1,0 +1,19 @@
+Algoritmo sin_titulo
+	Definir num Como Real;
+	Escribir"ingresa el numero que quiere dividir";
+	Leer num;
+	divi(num);
+FinAlgoritmo
+
+subproceso divi(num)
+	Definir resta,resta1,contador,calculo Como real;
+	Mientras num>11 Hacer
+		contador<-contador+num;
+		resta=num-13;
+		Escribir resta;
+		Leer num;
+	Fin Mientras
+	Escribir" el residuo es ", contador;
+	calculo=num/3;
+	Escribir" el cociente es ",calculo;
+FinSubProceso

@@ -1,0 +1,31 @@
+Algoritmo sin_titulo
+	Definir frase Como Caracter;
+	Escribir "ingresa la frase a cambiar";
+	Leer frase;
+	suma(frase);
+FinAlgoritmo
+
+SubProceso suma(frase) 
+	definir i como entero;
+	Definir letra Como Caracter;
+	Para i = 0 Hasta Longitud(frase) Hacer
+		letra=subcadena(frase,i,i);
+		Segun letra Hacer
+			"a","A":
+				letra = "@";
+			"e","E":
+				letra = "#";
+			"i","I":
+				letra = "$";
+			"o","O":
+				letra = "%";
+			"u","U":
+				letra = "*";
+		Fin Segun
+		frase=concatenar(frase, letra);
+		escribir letra sin saltar;
+	FinPara
+	
+
+FinSubProceso
+	

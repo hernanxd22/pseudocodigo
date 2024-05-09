@@ -1,0 +1,19 @@
+Algoritmo sin_titulo
+	Definir clave Como Caracter;
+	Definir cont Como Entero;
+	Escribir "ingresa un clave ";
+	Leer clave;
+	Repetir
+		Si clave <> "eureka" Entonces
+			Escribir "no es la clave correcta";
+			Leer clave;
+			cont<-cont+1;
+		Fin Si
+	Hasta Que cont=3 o clave="eureka"
+	Si cont=3 Entonces
+		Escribir "la cantidad de intestos termino ";
+	Fin Si
+    Si clave="eureka" Entonces
+		Escribir "la contraseña es correcta";
+	Fin Si
+FinAlgoritmo

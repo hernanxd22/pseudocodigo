@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	Definir num,num1 como entero;
+	Escribir "ingrese un numero";
+	Leer num;
+	Escribir "ingrese otro numero";
+	Leer num1;
+	inter(num,num1);
+FinAlgoritmo
+
+SubProceso inter(num,num1)
+	Definir num3,num4 Como Entero;
+	num3<-num;
+	num4<-num1;
+	Escribir "ahora el primer numero es de ",num4;
+	Escribir "ahora el segundo numero es de ",num3;
+FinSubProceso

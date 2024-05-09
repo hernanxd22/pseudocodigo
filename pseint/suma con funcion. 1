@@ -1,0 +1,15 @@
+Algoritmo sin_titulo
+	Definir num,num1,a Como Real;
+	Escribir "ingresa un numero ";
+	Leer num;
+	Escribir "ingresa otro numero";
+	leer num1;
+	a<-num2(num,num1);
+FinAlgoritmo
+
+Funcion var=num2(num,num1)
+	Definir var como entero;
+	var=num+num1;
+	Escribir "la suma de los numero es de ",var;
+FinFuncion
+	

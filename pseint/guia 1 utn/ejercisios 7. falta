@@ -1,0 +1,59 @@
+Algoritmo sin_titulo
+	Definir matriz,i,j,a,n,m,l,u Como real;
+	
+	Escribir "ingresa el numeros de filas";
+	Leer n;
+	Escribir "ingresa el numero de columnas ";
+	Leer m;
+	Dimension matriz[n,m];
+	Para i<-1 Hasta n Con Paso 1 Hacer
+		Para j<-1 Hasta m Con Paso 1 Hacer
+				si i=1 y j=1 Entonces
+					matriz[i,j]<-1;
+				FinSi
+				si i=1 y j=2 Entonces
+					matriz[i,j]<-2;
+				FinSi
+				si i=1 y j=3 Entonces
+					matriz[i,j]<-3;
+				FinSi
+				si i=1 y j=4 Entonces
+					matriz[i,j]<-4;
+				FinSi
+				si i=1 y j=5 Entonces
+					matriz[i,j]<-5;
+				FinSi
+		Fin Para
+	Fin Para
+	Para i<-1 Hasta n Con Paso 1 Hacer
+		Para j<-1 Hasta m Con Paso 1 Hacer
+			Escribir Sin Saltar (matriz[i,j]);
+		Fin Para
+		Escribir ("");
+	Fin Para
+	Para l<-1 Hasta n Con Paso 1 Hacer
+		Para u<-1 Hasta m Con Paso 1 Hacer
+			si l=1 y u=5 Entonces
+				matriz[l,u]<-1;
+			FinSi
+			si l=1 y u=4 Entonces
+				matriz[l,u]<-2;
+			FinSi
+			si l=1 y u=3 Entonces
+				matriz[l,u]<-3;
+			FinSi
+			si l=1 y u=2 Entonces
+				matriz[l,u]<-4;
+			FinSi
+			si l=1 y u=1 Entonces
+				matriz[l,u]<-5;
+			FinSi
+		Fin Para
+	Fin Para
+	Para l<-1 Hasta n Con Paso 1 Hacer
+		Para u<-1 Hasta m Con Paso 1 Hacer
+			Escribir Sin Saltar (matriz[l,u]);
+		Fin Para
+		Escribir ("");
+	Fin Para
+FinAlgoritmo

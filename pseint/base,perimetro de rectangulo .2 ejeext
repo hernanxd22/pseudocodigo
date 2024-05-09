@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	Definir base,altura,area,perimetro Como Real;
+	Escribir "ingresa la base del rectangulo ";
+	Leer base;
+	Escribir "ingresa la altura del rectangulo ";
+	Leer altura;
+	area=base*altura;
+	perimetro=base+altura+base+altura;
+	Escribir "el area del rectangulo es de ",area ;
+	Escribir "el perimetro del rectangulo es de ",perimetro;
+	
+FinAlgoritmo

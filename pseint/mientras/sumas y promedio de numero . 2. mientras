@@ -1,0 +1,17 @@
+Algoritmo sin_titulo
+	Definir num,num1,cont,cont1,nu,suma Como real;
+	Escribir "ingresa un numero ";
+	Leer num;
+	Mientras num<>-1 Hacer
+		Escribir "ingresa un numero ";
+		Leer num;
+		Si num<>-1 Entonces
+			cont<-cont+num;
+			cont1<-cont1+1;
+			Escribir cont;
+			Escribir cont1;
+		Fin Si
+	Fin Mientras
+	suma=cont/cont1;
+	Escribir "el promedio de la suma de los numeros es de ", suma;
+FinAlgoritmo

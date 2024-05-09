@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	Definir num,cal,cal1 Como real;
+	Escribir "ingresa que quiere saber si 2 o 3 ";
+	Leer num;
+	Si num=2 Entonces
+		cal=100/2;
+		Escribir "la cantidad de numero que son multiples de 2 de lo primeros 100 es ",cal;
+	SiNo
+		cal1=100/3;
+		Escribir "la cantidad de numero que son multiples de 3 de lo primeros 100 es ",cal1;
+	Fin Si
+FinAlgoritmo

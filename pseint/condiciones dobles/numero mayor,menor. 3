@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+	Definir num Como Real;
+	Escribir "ingrese un numero ";
+	Leer num;
+	Si num<100 Entonces
+		Escribir "el numero es menor";
+	SiNo
+		Escribir "el numero es mayor ";
+	Fin Si
+FinAlgoritmo

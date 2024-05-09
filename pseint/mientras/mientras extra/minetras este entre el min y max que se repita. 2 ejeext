@@ -1,0 +1,15 @@
+Algoritmo sin_titulo
+	Definir num,num1,a,cont Como Entero;
+	Escribir "ingresa un numero minimo";
+	Leer num;
+	Escribir "ingresa un numero maximo";
+	Leer num1;
+	Escribir "ingresa un numero entre el minimo y maximo";
+	Leer a;
+	Mientras a<num y a>num1 Hacer
+		Escribir "ingresa un numero entre el minimo y maximo";
+		Leer a;
+		cont<-cont+a;
+	Fin Mientras
+	Escribir "la suma de los numero entre el minimo y maximo es de ", cont;
+FinAlgoritmo

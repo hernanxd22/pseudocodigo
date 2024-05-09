@@ -1,0 +1,21 @@
+Algoritmo sin_titulo
+	Definir num Como Entero;
+	Escribir "ingresa un numero entre el 1 y el 7";
+	Leer num;
+	Segun num Hacer
+		1:
+			Escribir "lunes";
+		2:
+			Escribir "martes";
+		3:
+			Escribir "miercoles";
+		4:
+			Escribir "jueves";
+		5:
+			Escribir "viernes";
+		6:
+			Escribir "sabado";
+		7:
+			Escribir "domingo";
+	Fin Segun
+FinAlgoritmo

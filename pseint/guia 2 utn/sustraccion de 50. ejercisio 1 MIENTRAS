@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+	Definir a,kg Como Real;
+	Escribir "ingrese la capacidad total";
+	Leer kg;
+	Mientras kg<>0 Hacer
+		kg=kg-50;
+		Escribir "sustraccion de 50 en 50 ",kg;
+	Fin Mientras
+Escribir "se termino la ejecucion";
+FinAlgoritmo

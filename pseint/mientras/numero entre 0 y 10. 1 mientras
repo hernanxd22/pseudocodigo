@@ -1,0 +1,13 @@
+Algoritmo sin_titulo
+	Definir num Como Entero;
+	Escribir "ingresa un numero entre el 0 y el 10";
+	Leer num;
+	Mientras num>10 y num>=0 Hacer
+		Leer num;
+		Si num<10 y num >0 Entonces
+			Escribir "el numero esta entre el 0 y el 10";
+		SiNo
+			Escribir "el numero no esta entre el 0 y el 10";
+		Fin Si
+	Fin Mientras
+FinAlgoritmo

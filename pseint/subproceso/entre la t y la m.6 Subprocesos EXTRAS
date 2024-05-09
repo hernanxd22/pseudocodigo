@@ -1,0 +1,14 @@
+Algoritmo sin_titulo
+	Definir letra Como caracter;
+	Escribir "ingresa un letra";
+	Leer letra;
+	suma(letra);
+FinAlgoritmo
+SubProceso suma(letra)
+	Si letra>="m" y letra<="t" Entonces
+		Escribir "esta entre la m y la t";
+	SiNo
+		Escribir "no esta entre la m y la t";
+	Fin Si
+FinSubProceso
+	

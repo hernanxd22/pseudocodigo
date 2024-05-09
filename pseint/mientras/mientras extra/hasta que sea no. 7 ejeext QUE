@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+	Definir num Como Entero;
+	Definir nop Como Caracter;
+	Repetir
+	Escribir "ingresa un numero ";
+	Leer num;
+	Escribir "desea escribir otro numero ";
+	Leer nop;
+Hasta Que nop="no"
+FinAlgoritmo

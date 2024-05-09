@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	Definir nin,non,suma,nin1,non1 Como real;
+	Escribir "ingresa la cantidad de ninos que hay en el salon ";
+	Leer non;
+	Escribir "ingresa la cantidad de ninas que hay en el salon ";
+	Leer nin;
+	suma=non+nin;
+	nin1=100*non/suma;
+	Escribir "el porcentaje de ninos es de ",nin1;
+	non1=100*nin/suma;
+	Escribir "el pocentaje de ninas es de ",non1;
+FinAlgoritmo

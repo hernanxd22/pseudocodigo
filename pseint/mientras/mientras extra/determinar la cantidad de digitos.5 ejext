@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+	Definir num,a,cont Como real;
+	Escribir "ingresa un numero para saber cauntos digitos tiene";
+	Leer num;
+	Mientras num >= 1 Hacer
+		num=trunc(num/10);
+		cont<-cont+1;
+	Fin Mientras
+	Escribir "la cantidad de digitos que tiene es de ",cont;
+FinAlgoritmo

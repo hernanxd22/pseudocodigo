@@ -1,0 +1,21 @@
+Algoritmo sin_titulo
+	Definir num,ala,cont Como real;
+	Escribir "ingresa que quiere saber si 2 o 3 ";
+	Leer num;
+	Si num=2 Entonces
+		Para num<-1 Hasta 100 Con Paso 1 Hacer
+			Si num MOD 2=0 Entonces
+				cont=cont+1;
+			Fin Si
+		Fin Para
+		escribir "la cantidad de numero que son multiples de 2 de lo primeros 100 es ",cont;
+	SiNo
+		Para num<-1 Hasta 100 Con Paso 1 Hacer
+			Si num MOD 3=0 Entonces
+				cont=cont+1;
+			Fin Si
+		Fin Para
+		escribir "la cantidad de numero que son multiples de 3 de lo primeros 100 es ",cont;
+ 
+	Fin Si
+FinAlgoritmo

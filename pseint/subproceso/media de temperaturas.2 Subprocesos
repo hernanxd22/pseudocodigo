@@ -1,0 +1,18 @@
+Algoritmo sin_titulo
+	Definir dia Como caracter;
+	Escribir"ingrese la que dia quiere ver la temp maxima y minima ";
+	Leer dia;
+	suma(dia);
+FinAlgoritmo
+
+SubProceso suma(dia)
+	Definir max,min,cal,cal1 Como real;
+	Escribir "ingresa la temperatura maxima";
+	Leer max;
+	Escribir "ingresa la temperatura minima ";
+	Leer min;
+	cal=max+min;
+	cal1=cal/2;
+	Escribir "la media del dia ",dia, " es de ", cal1 ;
+FinSubProceso
+	

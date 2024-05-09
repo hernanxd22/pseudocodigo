@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	Definir frase,esx,int Como Caracter;
+	Definir fra Como Entero;
+	Escribir "ingresa un frase";
+	Leer frase;
+	fra=Longitud(frase);
+	esx="!";
+	int="?";
+	esx=Concatenar(esx,frase);
+	int=Concatenar(int,frase);
+	Si fra=4 Entonces
+		Escribir esx;
+	SiNo
+		Escribir int;
+	Fin Si
+FinAlgoritmo

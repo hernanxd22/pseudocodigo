@@ -1,0 +1,14 @@
+Algoritmo sin_titulo
+	Definir num,num1,a,cont,num2 Como Entero;
+	Escribir "ingresa un numero limite positivo ";
+	Leer num;
+	Escribir "ingresa un numero";
+	Leer num2;
+	cont<-0;
+	Mientras num>num2 Hacer
+		Escribir "ingresa un numero";
+		Leer num1;
+		num2<-num2+num1;
+	Fin Mientras
+	Escribir "la suma total de los numero se paso de los limites ", num2;
+FinAlgoritmo

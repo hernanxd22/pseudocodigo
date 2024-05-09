@@ -1,0 +1,40 @@
+Algoritmo sin_titulo
+	Definir i,a,b,c,r,t,u,p Como Real;
+	Escribir "la tabla del 1 es ";
+	
+	Para i<-1 Hasta 10 Con Paso 1 Hacer
+		r=i*1;
+		Si r MOD 2=0 Entonces
+			Escribir "el numero es par ",r;
+		SiNo
+			Escribir "el numero es impar ",r;
+		Fin Si
+	Fin Para
+	Escribir "la tabla del 2 es ";
+	Para a<-1 Hasta 10 Con Paso 1 Hacer
+		t=a*2;
+		Si t MOD 2=0 Entonces
+			Escribir "el numero es par ",t;
+		SiNo
+			Escribir "el numero es impar ",t;
+		Fin Si
+	Fin Para
+	Escribir "la tabla del 3 es ";
+	Para b<-1 Hasta 10 Con Paso 1 Hacer
+		u=b*3;
+		Si u MOD 2=0 Entonces
+			Escribir "el numero es par ",u;
+		SiNo
+			Escribir "el numero es impar ",u;
+		Fin Si
+	Fin Para
+	Escribir "la tabla del 4 es ";
+	Para c<-1 Hasta 10 Con Paso 1 Hacer
+		p=c*4;
+		Si p MOD 2=0 Entonces
+			Escribir "el numero es par ",p;
+		SiNo
+			Escribir "el numero es impar ",p;
+		Fin Si
+	Fin Para
+FinAlgoritmo

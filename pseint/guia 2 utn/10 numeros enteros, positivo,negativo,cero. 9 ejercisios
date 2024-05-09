@@ -1,0 +1,19 @@
+Algoritmo sin_titulo
+	Definir i,num,cont,cont1,cont2 Como Real;
+	Para i<-1 Hasta 10 Con Paso 1 Hacer
+		Escribir "ingresa 10 numeros positivos";
+		Leer num;
+		Si num > 0 Entonces
+			cont<-cont+1;
+		Fin Si
+		Si num = 0 Entonces
+			cont1<-cont1+1;
+		Fin Si
+		Si num < 0 Entonces
+			cont2<-cont2+1;
+		Fin Si
+	Fin Para
+	Escribir "la cantidad de numero positivos es de ",cont;
+	Escribir "la cantidad de numeros negativos es de ",cont2;
+	Escribir "la cantidad de 0 es de ", cont1;
+FinAlgoritmo

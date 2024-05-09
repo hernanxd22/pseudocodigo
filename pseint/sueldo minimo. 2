@@ -1,0 +1,11 @@
+Algoritmo sin_titulo
+	Definir suel,min Como Real;
+	Escribir "ingrese su sueldo que cobra actualmente";
+	Leer suel;
+	min<-150000;
+	Si suel<min Entonces
+		Escribir "tu sueldo es menor al sueldo minimo";
+	SiNo
+		Escribir "su sueldo es mayor al sueldo minimo ";
+	Fin Si
+FinAlgoritmo

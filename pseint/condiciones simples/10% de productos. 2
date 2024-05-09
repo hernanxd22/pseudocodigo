@@ -1,0 +1,11 @@
+Algoritmo sin_titulo
+	Definir impo,divi,resta Como Entero;
+	Definir mes Como Caracter;
+	Escribir"ingresa el mes en el cual fue a comprar ";
+	Leer mes;
+	Escribir "ingresa la suma de la compra ";
+	Leer impo;
+	divi=impo/10;
+	resta=impo-divi;
+	Escribir "el precio final con el descuento es de ", resta ;
+FinAlgoritmo

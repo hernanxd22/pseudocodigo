@@ -1,0 +1,34 @@
+Algoritmo sin_titulo
+	Definir num,suma,max,min,x,cont,cont1 Como real;
+	Escribir "ingresa un numero";
+	Leer num;
+	max<-0;
+	min<-0;
+	x<-1;
+	Mientras num <> 0 Hacer
+		Escribir "ingresa un numero";
+		Leer num;
+		Si num <> 0 Entonces
+		cont<-cont+1;
+		cont1<-cont1+num;
+		Escribir cont;
+		Escribir cont1;
+		Fin Si
+		Si x==0 Entonces
+			max<-num;
+			min<-num;
+		SiNo
+			Si num>max Entonces
+				max<-num;
+			Fin Si
+			Si num<min Entonces
+				min<-num;
+			Fin Si
+		Fin Si
+	Fin Mientras
+	suma=cont1/cont;
+	Escribir "el numero menor es ", min;
+	Escribir "el numero mayor es ", max;
+	Escribir "el promedio de todos los numero ingresados es de ", suma;
+
+FinAlgoritmo

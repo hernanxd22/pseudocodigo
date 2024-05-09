@@ -1,0 +1,14 @@
+Algoritmo sin_titulo
+	Definir i,num,cont Como Real;
+	Para i<-1 Hasta 6 Con Paso 1 Hacer
+		Escribir "ingresa 6 numeros enteros";
+		Leer num;
+		cont<-cont+num;
+	Fin Para
+	Escribir "la suma de los 6 numero es de ",cont;
+	Si cont > 50 Entonces
+		Escribir "por lo tanto la suma de los 6 numeros es mayor a 50";
+	SiNo
+		Escribir "por lo tanto la suma de los 6 numeros es menor a 50";
+	Fin Si
+FinAlgoritmo

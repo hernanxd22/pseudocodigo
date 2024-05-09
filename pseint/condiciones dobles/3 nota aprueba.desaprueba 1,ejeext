@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	Definir num,num1,num2,suma,divi Como real;
+	Escribir "ingresa la primera nota ";
+	Leer num;
+	Escribir "ingresa la sengunda nota";
+	Leer num1;
+	Escribir "ingresa la tercera nota ";
+	Leer num2;
+	suma=num+num1+num2;
+	divi=suma/3;
+	Si divi >= 7 Entonces
+		Escribir "usted aprobo el curso";
+	SiNo
+		Escribir "usted no aprobo el curso";
+	Fin Si
+FinAlgoritmo

@@ -1,0 +1,9 @@
+Algoritmo sin_titulo
+	Definir a Como Entero;
+	Definir num1 Como Caracter;
+	Escribir "ingresa un numero";
+	Leer num1;
+	a=Longitud(num1);
+	Escribir "la cantidad de digitos es de ",a ;
+FinAlgoritmo
+

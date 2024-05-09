@@ -1,0 +1,15 @@
+Algoritmo sin_titulo
+	definir max,min,ent,contador Como Entero;
+	Escribir "ingres un numero nimino";
+	leer min;
+	Escribir "ingresa un numero maximo";
+	Leer max;
+	Escribir "ingresa un numero entero entre el numero min y max";
+	Leer ent;
+	Mientras ent>min y ent<max Hacer
+		contador=contador+ent;
+		Escribir "ingresa otro numero entre el numero min y max";
+		Leer ent;
+	Fin Mientras
+	Escribir "la cantidad de numeros integrados es de : ", contador;
+FinAlgoritmo

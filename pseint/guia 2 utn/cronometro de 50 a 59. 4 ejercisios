@@ -1,0 +1,11 @@
+Algoritmo sin_titulo
+	Definir i,c Como Entero;
+	Para i<-0 Hasta 59 Con Paso 1 Hacer
+		Escribir "10:0:",i;
+		Si i=i Entonces
+			Para c<-0 Hasta 59 Con Paso 1 Hacer
+				Escribir "10:",c,":",i,;
+			Fin Para
+		Fin Si
+	finpara
+FinAlgoritmo

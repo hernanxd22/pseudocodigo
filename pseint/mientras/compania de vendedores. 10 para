@@ -1,0 +1,34 @@
+Algoritmo sin
+	Definir ver,sueldo,ventas,comisionpven,cal,cal1,cal2,cal3,cal4,salario,vendio,cal5,l1 Como Entero;
+	Definir tarde Como Caracter;
+	Escribir "cuantos vendedores tiene la compania ";
+	Leer ver;
+	Para ver<-1 Hasta ver Con Paso 1 Hacer
+		
+		Escribir "cuanto es el sueldo fijo de este vendedor en la mañana";
+		Leer sueldo;
+		Escribir "cuanto fue la venta de este vendedor en la mañana";
+		Leer ventas;
+		cal=0.10*ventas;
+		Escribir "el 10% de comisiones por ventas es de ", cal;
+		cal1=cal+sueldo;
+		Escribir "su salario de medio dia es de ",cal1;
+		Escribir "Usted trabajo en la tarde";
+		Leer tarde;
+		Si tarde = "si" Entonces
+			Escribir "cuanto fue su salario fijo en la tarde ";
+			Leer salario;
+			Escribir "cuanto vendio en la tarde ";
+			Leer vendio;
+			cal3=0.10*vendio;
+			Escribir "el 10% de comisiones que vendio es de ", cal3;
+			cal4=cal3+sueldo;
+			Escribir "su salario de medio dia es de ",cal4;
+			cal5=cal4+cal1;
+			Escribir "por lo tanto la suma de sus 2 salarios(mañana y tarde) es de ",cal5;
+		SiNo
+			l1=cal+sueldo;
+			Escribir "por no haber ido a trabajar a la tarde su salario fue de ", l1;
+		Fin Si
+	Fin Para
+FinAlgoritmo

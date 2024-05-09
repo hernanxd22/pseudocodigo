@@ -1,0 +1,19 @@
+Algoritmo sin_titulo
+	Definir lidngastados,ttranscurrido,timpo,suma,suma1,suma2,suma3 Como Real;
+	Escribir "ingrese la cantidad de tiempo que ocupo el auto ";
+	Leer timpo;
+	Si timpo <= 2 Entonces
+		Escribir"le corresponde pagar $400 pesos. la nafta va de regalo";
+	Fin Si
+	Escribir" ingresan la cantidad de litros de nafta gastados";
+	Leer lidngastados;
+	Escribir "ingrese el timpo transcurrido ";
+	Leer ttranscurrido;
+	suma2=ttranscurrido*60;
+	suma=lidngastados*40;
+	suma1= suma2*5.20;
+	Escribir "por la cantidad de listros gastados se le cobrara ", suma;
+	Escribir "por la cantidad de minutos gastados se le cobrara ",suma1;
+	suma3=suma1+suma;
+	Escribir "el total a pagar es de ", suma3;
+FinAlgoritmo

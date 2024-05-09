@@ -1,0 +1,34 @@
+Proceso sin_titulo
+	Definir num, num1, var1 Como Entero;
+	Leer num;
+	Leer num1;
+	si parimpar(num) mod 2=0 Entonces
+		Escribir "verdadero es impar";
+	SiNo
+		Escribir "Falso es par";
+	FinSi
+	si mult(num, num1)=0 Entonces
+		Escribir "es multiplo";
+	SiNo
+		Escribir "No es multiplo";
+	FinSi
+finProceso
+Funcion nro<-parimpar (num)
+	Definir nro Como Entero;
+	Definir par como logico;
+	SI num mod 2=0 Entonces
+		par=Verdadero;
+	Sino 
+		par=Falso;
+	FinSi
+FinFuncion
+Funcion div<-mult(num, num1)
+	Definir div Como Entera;
+	Definir bool como logico;
+	SI num mod num1=0 Entonces
+		bool<-Verdadero;
+	SiNo
+        bool<-Falso;
+	FinSi
+	
+FinFuncion

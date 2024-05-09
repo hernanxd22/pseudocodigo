@@ -1,0 +1,11 @@
+Algoritmo sin_titulo
+	Definir num,num1 Como Real;
+	Escribir "ingresa un numero desimal ";
+	Leer num;
+	Escribir "ingresa un numero mayor al numero desimal";
+	Leer num1;
+	Mientras num1>num Hacer
+		Escribir "ingresa un numero mayor al numero desimal";
+		Leer num1;
+	Fin Mientras
+FinAlgoritmo

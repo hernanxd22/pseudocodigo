@@ -1,0 +1,22 @@
+Algoritmo sin_titulo
+	Definir num,num1,num2 Como Real;
+	Escribir "ingresa un numero para el calculo ";
+	Leer num;
+	Escribir "ingresa el segundo numero para el calculo ";
+	Leer num1;
+	Escribir "ingresa lo que quiera calcular ";
+	Escribir "1-suma.2-resta.3-multiplicacion.4-divicion";
+	Leer num2;
+	Segun num2 Hacer
+		1:
+		    escribir(num+num1);
+		2:
+			Escribir(num-num1);
+		3:
+			Escribir(num*num1);
+		4:
+			Escribir(num/num1);
+		De Otro Modo:
+			Escribir "erro";
+	Fin Segun
+FinAlgoritmo

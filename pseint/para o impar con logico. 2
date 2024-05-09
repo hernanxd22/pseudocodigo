@@ -1,0 +1,44 @@
+Algoritmo sin_titulo
+	Definir num,num1,esmultiplo,a,b Como entero;
+	Escribir "ingresa un numero ";
+	Leer num;
+	Escribir "ingresa otro numero ";
+	Leer num1;
+	a<-pare(num);
+	Si num MOD 2=0 Entonces
+		Escribir "es par";
+	SiNo
+		Escribir "es impar";
+	Fin Si
+	b<-multi(num,num1);
+	Si esmultiplo=0 Entonces
+		Escribir "es multiple";
+	SiNo
+		Escribir "no es multiple";
+	Fin Si
+FinAlgoritmo
+
+Funcion num2<-pare(num)
+	Definir num2 Como Entero;
+	Definir blood Como Logico;
+	Si num MOD 2=0 Entonces
+		blood=falso;
+		Escribir blood;
+	SiNo
+		blood=verdadero;
+		Escribir blood;
+	Fin Si
+FinFuncion
+
+Funcion esmultiplo<-multi(num,num1)
+	definir esmultiplo como entero;
+	Definir blood1 Como Logico;
+	Si esmultiplo=0 Entonces
+		blood1= verdadero;
+		Escribir blood1;
+	SiNo
+		blood1= falso;
+		Escribir blood1;
+	Fin Si
+FinFuncion
+	

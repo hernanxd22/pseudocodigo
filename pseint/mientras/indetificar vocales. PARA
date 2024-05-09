@@ -1,0 +1,30 @@
+Algoritmo sin_titulo
+	definir frase,letra Como Caracter;
+	Definir cont,r,i,a,cont2,cont3,cont4,cont1 Como Entero;
+	Escribir "ingresa un frase ";
+	Leer frase;
+	r=Longitud(frase);
+	Para i<-1 Hasta r Con Paso 1 Hacer
+		letra=Subcadena(frase,i,i);
+		Si letra="a" Entonces
+			cont<-cont+1;
+		Fin Si
+		Si letra="e" Entonces
+			cont1<-cont1+1;
+		Fin Si
+		Si letra="i" Entonces
+			cont2<-cont2+1;
+		Fin Si
+		Si letra="o" Entonces
+			cont3<-cont3+1;
+		Fin Si
+		Si letra="u" Entonces
+			cont4<-cont4+1;
+		Fin Si
+	Fin Para
+	Escribir "la vocal a se encontro ",cont," veses";
+	Escribir "la vocal e se encontro ",cont1," veses";
+	Escribir "la vocal i se encontro ",cont2," veses";
+	Escribir "la vocal o se encontro ",cont3," veses";
+	Escribir "la vocal u se encontro ",cont4," veses";
+FinAlgoritmo

@@ -1,0 +1,19 @@
+Algoritmo sin_titulo
+	Definir tordefe, torsin Como Entero;
+	Escribir "ingresa la cantida de tornillos defectuosos";
+	Leer tordefe;
+	Escribir "ingresa la cantidad de tornillos sin defectos";
+	leer torsin;
+	Si tordefe>200 y torsin < 10000 Entonces
+		Escribir "es de grado 5";
+	Fin Si
+	Si tordefe <= 200 y torsin < 10000 Entonces
+		Escribir "es de grado 6";
+	Fin Si
+	Si tordefe > 200 y torsin >= 10000 Entonces
+		Escribir "es de grado 7";
+	Fin Si
+	Si tordefe <= 200 y torsin >= 10000 Entonces
+		Escribir "es de grado 8";
+	Fin Si
+FinAlgoritmo

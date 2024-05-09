@@ -1,0 +1,9 @@
+Algoritmo sin_titulo
+	Definir num,num1 como entero;
+	Escribir "ingrese un numero mayor al 10";
+	Leer num;
+	Mientras num>10 Hacer
+		Escribir "ingrese otro numero ";
+		Leer num;
+	Fin Mientras
+FinAlgoritmo

@@ -1,0 +1,15 @@
+Algoritmo sin_titulo
+	Definir esc,a,b Como Entero;
+	Escribir "ingrese la altura del rectangulo ";
+	Leer esc;
+	Para a<-1 Hasta esc Con Paso 1 Hacer
+		Para b<-1 Hasta esc Con Paso 1 Hacer
+			Si a>1 y a<esc y b>1 y b<esc Entonces
+				Escribir " ",sin saltar;
+			SiNo
+				Escribir "*",Sin Saltar;
+			Fin Si
+		Fin Para
+		Escribir " ";
+	Fin Para
+FinAlgoritmo

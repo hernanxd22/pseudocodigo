@@ -1,0 +1,20 @@
+Algoritmo sin_titulo
+	Definir lidnagas, tiemtrans,tiempo,cal,cal1,cal2 Como real;
+	Escribir "ingresa la cantidad de horas que ocupo el auto";
+	Leer tiempo;
+	Escribir "ingrese la cantidad de litros de nafta gastados";
+	Leer lidnagas;
+	Escribir "ingrese el tiempo transcurrido en minutos";
+	Leer tiemtrans;
+	cal=lidnagas*40;
+	cal1=tiemtrans*5.20;
+	cal2=cal+cal1;
+	Si tiempo <= 2 Entonces
+		Escribir "el valor que corresponde pagar es de $400 pesos y la nafta va de regalo.";
+	SiNo
+		Escribir "por la cantidad de nafta gastado es ", cal;
+		Escribir "por la cantidad de tiempo transcurrido es ",cal1 ;
+		Escribir "la suma total a pagar es de ", cal2;
+	Fin Si
+	
+FinAlgoritmo

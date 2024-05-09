@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	Definir mes Como Caracter;
+	Definir num,suma,resta Como Entero;
+	Escribir "ingresa el mes en el que fue a comprar ";
+	Leer mes;
+	Escribir "ingrese el importe de la compra de ese mes ";
+	Leer num;
+	suma=num*10/100;
+	resta=num-suma;
+	Escribir "es importe de la compra es de " , resta;
+FinAlgoritmo
+

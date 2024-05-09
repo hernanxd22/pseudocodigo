@@ -1,0 +1,42 @@
+Algoritmo sin_titulo
+	Definir calumnos,max,x,cont,cal3,cal4,nintegrador, nexposicion, nparcial,suma,cal,cal2,cont1,cal1 Como real;
+	Escribir "ingrese la cantidad de alumnos que tiene en su clase ";
+	Leer calumnos;
+	max<-1;
+	x<-1;
+	cal1=100/calumnos;
+	cal3=100/calumnos;
+	Para calumnos<-1 Hasta calumnos Con Paso 1 Hacer
+	Escribir "ingrese la nota de integrador ";
+	Leer nintegrador;
+	Si nintegrador > 7.5 Entonces
+		cont1<-cont1+1;
+		cal2=cal1*cont1;
+	Fin Si
+	Escribir "ingrese la nota de exposicion ";
+	Leer nexposicion;
+	Si x==0 Entonces
+		max<-nexposicion;
+	SiNo
+		Si nexposicion>max Entonces
+			max<-nexposicion;
+		Fin Si
+	Finsi
+	Escribir "ingrese la nota de parcial  ";
+	Leer nparcial;
+	Si nparcial>4.0 y nparcial<7.5  Entonces
+		cont<-cont+1;
+		cal4=cal3*cont;
+	Fin Si
+	suma=nintegrador+nexposicion+nparcial;
+	cal=suma/3;
+	Si cal < 6.5 Entonces
+		Escribir "usted tiene menos de 6.5 en el pomedio de la nota final";
+	SiNo
+		Escribir "la nota promedio final es de ", cal;
+	Fin Si
+Fin Para
+Escribir "los lumnos que tienen una nota de integrador mayor a 7.5 es del ",cal2 "%";
+Escribir "La mayor nota obtenida en las exposiciones ", max ;
+Escribir "los lumnos que tienen una nota de integrador mayor a 7.5 es del ",cal4 "%";
+FinAlgoritmo

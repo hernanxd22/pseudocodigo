@@ -1,0 +1,52 @@
+Algoritmo sin_titulo
+	Definir num,num1,suma5,num2,horas,suma,resta,hora1,horaext,suma1,multi,cal,cal1,cal2,hora2,horaext1,horas1,suma8,multi8 Como real;
+	Definir pala Como Caracter;
+	Escribir "ingresa en que area de trabajo en el que encuentra ";
+	Escribir "electricidad, comision , camioneros , salario fijo + comision, albañiles , salario fijo  ";
+	Leer pala;
+	Si pala = "electricidad" Entonces
+		Escribir "ingresa el monto total de las venta realizadas en la semana ";
+		Leer num;
+		suma=40/100;
+		suma5=suma*num;
+		resta=num-suma5;
+		Escribir " el monto total del salario de los de electricidad es de ", resta ;
+	Fin Si
+	Si pala="camioneros" Entonces
+		Escribir "ingresa el valor que se le paga por hora ";
+		Leer hora1;
+		Escribir "ingresa la cantidad de horas trabajadas semanalmente ";
+		Leer horas;
+		Escribir "ingresa las horas extras max 40";
+		Leer horaext;
+		Escribir "ingresa el monto total de las venta realizadas en la semana ";
+		Leer num2;
+		Si horaext<= 40  Entonces
+			suma1=horas+horaext;
+			multi=suma1*hora1;
+			Escribir "el moto total del salario es de ", multi;
+			cal=25/100;
+			cal1=cal*num2;
+			Escribir "la comision por las vestas es del 25 % por lo tanto el moto es de ",cal1 ;
+			cal2=cal1+multi;
+			Escribir "el moto total de las comision y el salario es de ", cal2;
+		SiNo
+			Escribir "no se puede ingresar mas de 40 horas extras ";
+		Fin Si
+	Fin Si
+	Si pala="albañil" Entonces
+		Escribir "ingresa el valor que se le paga por hora ";
+		Leer hora2;
+		Escribir "ingresa la cantidad de horas trabajadas semanalmente ";
+		Leer horas1;
+		Escribir "ingresa las horas extras max 40";
+		Leer horaext1;
+		Si horaext<= 40  Entonces
+			suma8=horas1+horaext1;
+			multi8=suma8*hora2;
+			Escribir "el moto total del salario es de ", multi8;
+		FinSi
+		
+	FinSi
+	
+FinAlgoritmo

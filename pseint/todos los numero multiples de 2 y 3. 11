@@ -1,0 +1,9 @@
+Algoritmo sin_titulo
+	Definir num,num1,num2 como real;
+	num=100/2;
+	num1=100/3;
+	num2=num+num1;
+	Escribir "la cantidad e numeros entre el 1 y el 100 que son multiples de 2 es de ", num;
+	Escribir "la cantidad e numeros entre el 1 y el 100 que son multiples de 3 es de ", redon(num1);
+	Escribir "la sumatoria de los numeros que son multiples de 2 y 3 son de ", redon(num2) ;
+FinAlgoritmo

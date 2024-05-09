@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+	Definir edad Como Entero;
+	Escribir "ingresa la edad que tiene usted ";
+	Leer edad;
+	Si edad<18 Entonces
+		Escribir " usted es menor de edad, no puedo dejarlo pasar ";
+	SiNo
+		Escribir " usted es mayor de edad, si puedo dejarlo pasar ";
+	Fin Si
+FinAlgoritmo

@@ -1,0 +1,20 @@
+Algoritmo sin_titulo
+	Definir dia Como Entero;
+	Escribir "ingresa la cantidad de dias que quieren sacar la media ";
+	Leer dia;
+	temp(dia);
+FinAlgoritmo
+
+SubProceso temp(dia)
+	Definir max,min,suma,divi,a Como real;
+	Para dia<-1 Hasta dia Con Paso 1 Hacer
+	Escribir "ingresa la temperatura max del dia ";
+	Leer max;
+	Escribir "ingresa la temperatura min del dia";
+	Leer min;
+	suma=max+min;
+	divi=suma/2;
+	Escribir "la media del dia es de ", divi;
+	Fin Para
+FinSubProceso
+	

@@ -1,0 +1,18 @@
+Algoritmo sin_titulo
+	Definir num,pares,cont,cont1,cont2 Como Entero;
+	Escribir "ingresa la cantidad de numeros que quiere ";
+	Leer num;
+	Repetir
+		Si pares MOD 2=0 Entonces
+			Escribir "ingres solo numero pares ";
+			Leer pares;
+			cont<-cont+1;
+			cont1<-cont1+pares;
+		SiNo
+			Escribir "hay numero impares";
+		Fin Si
+	Hasta Que cont=num;
+	Si pares MOD 2=0 Entonces
+		Escribir "la suma de los primero ",num," numeros es de ",cont1;
+	Finsi
+FinAlgoritmo

@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+	Definir num,a como real;
+	Definir i Como Entero;
+	a<-1;
+	num<-100;
+	Para a<-0 Hasta 100 Con Paso 1 Hacer
+		i=num*(num+1)/2;
+	Fin Para
+	Escribir "la suma de los numero es de ", i;
+FinAlgoritmo

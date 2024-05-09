@@ -1,0 +1,24 @@
+Algoritmo sin_titulo
+	Definir can,nota1,nota2,nota3,suma,promedio,prome Como real;
+	Definir usu,finn Como Caracter;
+	can<-2;
+	Mientras can<10000 Hacer
+		Escribir "ingresa tu numbre de ususario";
+		Leer usu;
+		Mientras usu<>finn Hacer
+			Escribir "ingresa la nota de la parte paractica";
+			Leer nota1;
+			Escribir "ingresa la nota de la parte de problemas";
+			Leer nota2;
+			Escribir "ingresa la nota de la parte teorica";
+			Leer nota3;
+			suma=nota1+nota2+nota3;
+			prome=suma/3;
+			Si prome>0 y prome<10 Entonces
+				Escribir "el promedio total del alumno es de ",prome;
+			SiNo
+				Escribir "usted a desaprobado, no podremos darle su promedio";
+			Fin Si
+		FinMientras
+	Fin Mientras
+FinAlgoritmo

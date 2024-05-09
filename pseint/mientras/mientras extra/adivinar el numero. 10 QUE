@@ -1,0 +1,17 @@
+Algoritmo sin_titulo
+	Definir num,x Como Entero;
+	num=aleatorio(1,10);
+	Repetir
+	Escribir "ingresa un numero x";
+	Leer x;
+	si x=num Entonces
+		Escribir "el numero es correcto";
+	sino 
+		Si x>num Entonces
+			Escribir "el numero menor";
+		SiNo
+			Escribir "el numero es mayor";
+		Fin Si
+	FinSi
+Hasta Que num=x
+FinAlgoritmo

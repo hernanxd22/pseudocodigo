@@ -1,0 +1,14 @@
+
+Algoritmo sin_titulo
+		definir n,a,b como real;
+		Escribir "ingresa un numero para la escalera ";
+		Leer n;
+		Para a<-1 Hasta n Con Paso 1 Hacer
+			Para b<-1 Hasta a Con Paso 1 Hacer
+				Escribir " #",Sin Saltar;
+			FinPara
+			Escribir " ";
+		FinPara
+		
+FinAlgoritmo
+

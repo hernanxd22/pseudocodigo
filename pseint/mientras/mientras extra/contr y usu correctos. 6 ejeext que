@@ -1,0 +1,13 @@
+Algoritmo sin_titulo
+	Definir cont,usu Como Entero;
+	Repetir
+		Escribir "ingrese su codigo de usuario ";
+		Leer usu;
+		Escribir "ingrese si codigo de contraseña ";
+		Leer cont;
+		si cont <> 4567 y usu <> 1024  Entonces
+			Escribir "contraseña y usuario incorrecto";
+		FinSi
+	Hasta Que usu=1024 y cont=4567; 
+	Escribir "ha ingresa corectamente su contraseña y usuario";
+FinAlgoritmo

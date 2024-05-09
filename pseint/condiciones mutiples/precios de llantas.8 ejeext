@@ -1,0 +1,17 @@
+Algoritmo sin_titulo
+	Definir num,suma,suma1,suma2 Como entero;
+	Escribir "ingresa la cantidad de llantas a comprar ";
+	Leer num;
+	Si num<5 Entonces
+		suma=3000*num;
+		Escribir "la cantidad total por todas las llantas es de ", suma;
+	Fin Si
+	Si num>5 y num<10 Entonces
+		suma1=2500*num;
+		Escribir "la cantidad total por todas las llantas es de ", suma1;
+	Fin Si
+	Si num>=10 Entonces
+		suma2=2000*num;
+		Escribir "la cantidad total por todas las llantas es de ", suma2;
+	Fin Si
+FinAlgoritmo

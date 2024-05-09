@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	Definir num,a Como Entero;
+	Escribir "ingresa el valor de A ";
+	Leer num;
+	a<-num;
+	suma(num,a);
+FinAlgoritmo
+SubProceso suma(num,a)
+	Definir n,b Como Entero;
+	Escribir "ingrese el valor de B";
+	Leer n;
+	num<-n;
+	Escribir "ahora el numero de A es ",num;
+	Escribir "ahora el numero de B es ",a;
+FinSubProceso
+	

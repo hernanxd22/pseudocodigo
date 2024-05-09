@@ -1,0 +1,22 @@
+Algoritmo sin_titulo
+	Definir num Como Real;
+	Escribir "ingresa un numero sabiendo que : ";
+	Escribir "1-lunes.2-martes.3-miescoles.4-jueves.5-viernes.6-sabado.7-domingo";
+	Leer num;
+	Segun num Hacer
+		1:
+			escribir "lunes";
+		2:
+			Escribir "martes";
+		3:
+			Escribir "miercoles";
+		4:
+			Escribir "jueves";
+		5:
+			Escribir "viernes";
+		6:
+			Escribir "sabado";
+		7:
+			Escribir "domingo";
+	Fin Segun
+FinAlgoritmo

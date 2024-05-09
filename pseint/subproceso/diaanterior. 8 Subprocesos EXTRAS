@@ -1,0 +1,23 @@
+Algoritmo sin_titulo
+	Definir dia Como Entero;
+	Escribir "ingresa un dia del mes";
+	Leer dia;
+	suma(dia);
+FinAlgoritmo
+
+SubProceso suma(dia) 
+	Definir mes,año,diaanterior,mesanterior,añoanterior Como Entero;
+	Escribir "ingrese un mes del año";
+	Leer mes;
+	Escribir "ingrese el año deseado";
+	Leer año;
+	diaanterior=dia-1;
+	mesanterior=mes;
+	añoanterior=año;
+	Si dia<30 y mes<12 Entonces
+		Escribir "la fecha anterior es ",diaanterior,"/",mesanterior,"/",añoanterior ;
+		Escribir "la fecha actual es ",dia,"/",mes,"/",año;
+	SiNo
+		Escribir "el dia o el mes no exiten";
+	Fin Si
+FinSubProceso

@@ -1,0 +1,42 @@
+Algoritmo sin_titulo
+	Definir num,num1,num2 Como Entero;
+	Escribir "ingrese un dia/mes/año";
+	Leer num,num1,num2;
+	Si num < 30 Entonces
+		Escribir num," si es un dia del mes";
+	SiNo
+		Escribir num, " no es un dia del mes";
+	Fin Si
+	Si num < 30  Entonces
+		Escribir "el dia/mes/años es ";
+		Segun num1 Hacer
+			1:
+				Escribir num," de enero de ", num2;
+			1:
+				Escribir num," de febrero de ", num2;
+			1:
+				Escribir num," de marzo de ", num2;
+			1:
+				Escribir num," de abril de ", num2;
+			1:
+				Escribir num," de mayo de ", num2;
+			1:
+				Escribir num," de junio de ", num2;
+			1:
+				Escribir num," de julio de ", num2;
+			1:
+				Escribir num," de agosto de ", num2;
+			1:
+				Escribir num," de septiembre de ", num2;
+			1:
+				Escribir num," de octubre de ", num2;
+			1:
+				Escribir num," de noviembre de ", num2;
+			1:
+				Escribir num," de deciembre de ", num2;
+			De Otro Modo:
+				Escribir "no existe el mes en el año";
+		Fin Segun
+	Fin Si
+FinAlgoritmo
+

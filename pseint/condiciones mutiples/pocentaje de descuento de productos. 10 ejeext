@@ -1,0 +1,26 @@
+Algoritmo sin_titulo
+	Definir num,manzanas,suma,cal,cal1,cal2,cal3,cal4,cal5 Como real;
+	Escribir "ingresa la cantidad de manzanas que quiere comprar ";
+	Leer num;
+	Escribir "ingresa cuanto vale cada manzana";
+	Leer manzanas;
+	suma=num*manzanas;
+	Si num>0 y num<2 Entonces
+		Escribir "el precio a pagar es de ", suma;
+	Fin Si
+	cal=num*100/10;
+	cal1=suma-cal;
+	Si num>2.1 y num<5 Entonces
+		Escribir "el precio a pagar es de ", cal1;
+	Fin Si
+	cal2=1500*num/100;
+	cal3=suma-cal2;
+	Si num>5.1 y num<10 Entonces
+		Escribir "el precio a pagar es de ", cal3;
+	Fin Si
+	cal4=num*400/20;
+	cal5=suma-cal4;
+	Si num>10.1 Entonces
+		Escribir "el precio a pagar es de ", cal5;
+	Fin Si
+FinAlgoritmo

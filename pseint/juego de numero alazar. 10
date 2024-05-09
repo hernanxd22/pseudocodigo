@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	definir numal,numing como real;
+	numal=Aleatorio(1,10);
+    Escribir "el numero que elijio la computadora es ", numal;
+	Escribir "ingresa un numero x";
+	Leer numing;
+	Repetir
+		Si numing<numal Entonces
+			Escribir "el numero es mas grande";
+		SiNo
+			Escribir "el numero es mas pequeños";
+		Fin Si
+		Leer numing;
+	Hasta Que numing=numal
+	Escribir "el numero alazar y el numero ingresado son iguales";
+FinAlgoritmo

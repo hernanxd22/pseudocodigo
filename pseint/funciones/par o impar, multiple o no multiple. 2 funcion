@@ -1,0 +1,45 @@
+Funcion b <- resta ( num,num1 )
+	Definir b,c,cont,n,z,cont1,d Como real;
+	Definir bool1 Como Logico;
+	n=num/num1;
+	d=redon(n);
+	Escribir n;
+	z=d*num1;
+	si num=z Entonces
+		Escribir "el numero es multiple";
+		bool1=Verdadero;
+		Escribir bool1;
+	Sino
+		Escribir "el numero no es multiple";
+		bool1=falso;
+		Escribir bool1;
+	FinSi
+Fin Funcion
+
+Funcion a <- suma ( num )
+	Definir a Como Entero;
+	Definir bool Como Logico;
+	Si num MOD 2=0 Entonces
+		bool=falso;
+		Escribir bool;
+	SiNo
+		bool=verdadero;
+		Escribir bool;
+	Fin Si
+Fin Funcion
+
+
+Algoritmo sin_titulo
+	Definir a,num,num1,b Como real;
+	Escribir "ingresa un numero para ver si es par o impar";
+	Leer num;
+	Escribir "ingresa otro numero para ver si es multiple";
+	Leer num1;
+	Si num MOD 2=0 Entonces
+		Escribir "el numero es par";
+	SiNo
+		Escribir "el numero es impar";
+	Fin Si
+	a<-suma(num);
+	b<-resta(num,num1);
+FinAlgoritmo

@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	Definir des,ent Como Real;
+	Escribir "ingresa un numero decimal";
+	leer des;
+	Escribir "ingresa un numero entero";
+	Leer ent;
+	Mientras des<ent Hacer
+		Escribir "ingresa otro numero entero";
+		Leer ent;
+	Fin Mientras
+	Escribir "el programa se finalizo debido a que el numero ingresdo es menor al numero desimal";
+FinAlgoritmo
