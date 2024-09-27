@@ -1,0 +1,332 @@
+import java.util.Scanner;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class swithtp2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int opcion;
+
+        do {
+            System.out.println("Seleccione una opción (0 para salir):");
+            opcion = scanner.nextInt();
+            scanner.nextLine(); // Limpiar buffer
+
+            switch (opcion) {
+                case 0:
+                    System.out.println("Ingrese un número en decimal:");
+                    double deci = scanner.nextDouble();
+                    short peque = (short) deci;
+                    int entero = (int) deci;
+                    long largo = (long) deci;
+                    String texto = String.valueOf(deci);
+                    float flotante = (float) deci;
+                    System.out.println("El número en pequeño es: " + peque);
+                    System.out.println("El número en entero es: " + entero);
+                    System.out.println("El número en largo es: " + largo);
+                    System.out.println("El número en texto es: " + texto);
+                    System.out.println("El número en flotante es: " + flotante);
+                    break;
+
+                case 1:
+                    byte num = (byte) 140; // Ejemplo de valor fuera de rango para byte
+                    System.out.println("Número: " + num);
+                    if (Byte.MIN_VALUE < num && num < Byte.MAX_VALUE) {
+                        System.out.println("El número está dentro de los límites.");
+                    } else {
+                        System.out.println("El número no está entre los límites, se recomienda usar una variable más grande (long, int).");
+                    }
+                    break;
+
+                case 2:
+                    System.out.println("Ingrese un número de 3 dígitos:");
+                    int num2 = scanner.nextInt();
+                    if (num2 > 99 && num2 < 999) {
+                        System.out.println("El número está dentro del rango.");
+                        int num1 = num2 % 10;
+                        int num3 = (num2 / 10) % 10;
+                        int num4 = num2 / 100;
+                        int suma = num1 + num3 + num4;
+                        System.out.println("La suma de todos los dígitos es: " + suma);
+                    } else {
+                        System.out.println("El número no está dentro del rango.");
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("Ingrese un número:");
+                    int num3 = scanner.nextInt();
+                    String numStr = String.valueOf(num3);
+                    System.out.println("El número como string es: " + numStr);
+                    break;
+
+                case 4:
+                    String cadena = "La lluvia en Mendoza es escasa";
+                    System.out.println("La longitud de la cadena es: " + cadena.length());
+                    break;
+
+                case 5:
+                    System.out.println("Ingrese una cadena:");
+                    String cadenaVocal = scanner.nextLine();
+                    int cont = 0;
+                    for (int i = 0; i < cadenaVocal.length(); i++) {
+                        char letra = cadenaVocal.charAt(i);
+                        if (esVocal(letra)) cont++;
+                    }
+                    System.out.println("Cantidad de vocales: " + cont);
+                    break;
+
+                case 6:
+                    System.out.println("Ingrese una cadena:");
+                    String cadenaReplace = scanner.nextLine();
+                    String cadenaModificada = cadenaReplace.replace("a", "e");
+                    System.out.println("Cadena modificada: " + cadenaModificada);
+                    break;
+
+                case 7:
+                    String cadenaAscii = "La lluvia en Mendoza es escasa";
+                    for (int i = 0; i < cadenaAscii.length(); i++) {
+                        char c = cadenaAscii.charAt(i);
+                        System.out.print((int) c + " ");
+                    }
+                    System.out.println(); // Para nueva línea después de imprimir ASCII
+                    break;
+
+                case 8:
+                    System.out.println("Ingrese una frase:");
+                    String frase = scanner.nextLine();
+                    System.out.println("1. Convertir a minúsculas\n2. Convertir a mayúsculas");
+                    int opcionCaso8 = scanner.nextInt();
+                    if (opcionCaso8 == 1) {
+                        System.out.println("Frase en minúsculas: " + frase.toLowerCase());
+                    } else {
+                        System.out.println("Frase en mayúsculas: " + frase.toUpperCase());
+                    }
+                    break;
+
+                case 9:
+                    System.out.println("Ingrese la primera frase:");
+                    String cadena1 = scanner.nextLine();
+                    System.out.println("Ingrese la segunda frase:");
+                    String cadena2 = scanner.nextLine();
+                    if (cadena1.equals(cadena2)) {
+                        System.out.println("Las frases son iguales.");
+                    } else {
+                        System.out.println("Las frases no son iguales.");
+                    }
+                    break;
+
+                case 10:
+                    String cadena10 = "holamundo";
+                    System.out.println("Las letras en la posición 4 y 5 son: " + cadena10.substring(3, 5));
+                    break;
+
+                case 11:
+                    System.out.println("Los datos primitivos son entidades elementales, mientras que los datos por referencia son entidades más complejas.");
+                    System.out.println("Los tipos de datos primitivos acceden a valores directamente, mientras que los datos por referencia almacenan direcciones de memoria.");
+                    break;
+
+                case 12:
+                    System.out.println("Lo que está mal es que un tipo de dato primitivo solo puede almacenar valores literales.");
+                    System.out.println("null es un valor que representa la ausencia de referencia a un objeto, y solo puede aplicarse a un tipo de referencia.");
+                    System.out.println("Para arreglarlo debemos hacer lo siguiente:");
+                    System.out.println("Integer numero = null;");
+                    break;
+
+                case 13:
+                    System.out.println("Aunque tengan el mismo nombre, son totalmente distintos. Double es por referencia y double es por tipo primitivo.");
+                    Double num5 = 3.3;
+                    double num1 = num5; // Autoboxing
+                    System.out.println("El valor convertido de Double a double es: " + num1);
+                    break;
+
+                case 14:
+                    Date fechaActual = new Date();
+                    String fechaString = getFechaString(fechaActual);
+                    System.out.println("Fecha como String: " + fechaString);
+                    break;
+
+                case 15: // Obtener fecha de Date
+                    System.out.println("Ingrese día, mes y año:");
+                    int dia = scanner.nextInt();
+                    int mes = scanner.nextInt();
+                    int anio = scanner.nextInt();
+                    Date fecha = getFechaDate(dia, mes, anio);
+                    System.out.println("Fecha: " + fecha);
+                    break;
+
+                case 16:
+                    OperacionMatematica operacion = new OperacionMatematica();
+                    operacion.setValor1(10.5);
+                    operacion.setValor2(5.5);
+                    System.out.println("Suma: " + operacion.aplicarOperacion("+"));
+                    System.out.println("Resta: " + operacion.aplicarOperacion("-"));
+                    System.out.println("Multiplicación: " + operacion.aplicarOperacion("*"));
+                    System.out.println("División: " + operacion.aplicarOperacion("/"));
+                    break;
+
+                case 17:
+                    System.out.println("Ingrese numerador y denominador para Fracción 1:");
+                    int numFraccion1 = scanner.nextInt();
+                    int denFraccion1 = scanner.nextInt();
+                    Fraccion fraccion1 = new Fraccion(numFraccion1, denFraccion1);
+
+                    System.out.println("Ingrese numerador y denominador para Fracción 2:");
+                    int numFraccion2 = scanner.nextInt();
+                    int denFraccion2 = scanner.nextInt();
+                    Fraccion fraccion2 = new Fraccion(numFraccion2, denFraccion2);
+
+                    Fraccion resultadoSuma = fraccion1.sumarFracciones(fraccion1, fraccion2);
+                    System.out.println("Suma de Fracciones: " + resultadoSuma);
+
+                    Fraccion resultadoResta = fraccion1.restarFracciones(fraccion1, fraccion2);
+                    System.out.println("Resta de Fracciones: " + resultadoResta);
+
+                    Fraccion resultadoMultiplicacion = fraccion1.multiplicarFracciones(fraccion1, fraccion2);
+                    System.out.println("Multiplicación de Fracciones: " + resultadoMultiplicacion);
+
+                    Fraccion resultadoDivision = fraccion1.dividirFracciones(fraccion1, fraccion2);
+                    System.out.println("División de Fracciones: " + resultadoDivision);
+                    break;
+
+                case 18: // Suma recursiva
+                    System.out.println("Ingrese un número mayor a cero:");
+                    int numRecursivo = scanner.nextInt();
+                    System.out.println("Suma: " + sumaRecursiva(numRecursivo));
+                    break;
+
+                case 19: // Suma de dígitos recursiva
+                    System.out.println("Ingrese un número:");
+                    int numParaSuma = scanner.nextInt();
+                    System.out.println("Suma de dígitos: " + sumaDigitosRecursiva(numParaSuma));
+                    break;
+
+                case 20: // Invertir cadena recursivamente
+                    System.out.println("Ingrese una cadena:");
+                    scanner.nextLine(); // Limpiar buffer
+                    String cadenaInvertir = scanner.nextLine();
+                    System.out.println("Cadena invertida: " + invertirCadena(cadenaInvertir));
+                    break;
+
+                default:
+                    System.out.println("Opción no válida, por favor seleccione una opción entre 0 y 23.");
+            }
+
+        } while (opcion != -1);
+        System.out.println("Programa finalizado.");
+        scanner.close();
+    }
+
+    public static boolean esVocal(char letra) {
+        char[] vocales = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+        for (char vocal : vocales) {
+            if (letra == vocal) return true;
+        }
+        return false;
+    }
+
+    public static String getFechaString(Date fecha) {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+        return sdf.format(fecha);
+    }
+
+    public static Date getFechaDate(int dia, int mes, int anio) {
+        Calendar calendar = new GregorianCalendar(anio, mes - 1, dia); // Mes - 1 porque es 0 indexado
+        return calendar.getTime();
+    }
+
+    public static double sumaRecursiva(int n) {
+        if (n == 0) return 0;
+        return n + sumaRecursiva(n - 1);
+    }
+
+    public static int sumaDigitosRecursiva(int n) {
+        if (n == 0) return 0;
+        return (n % 10) + sumaDigitosRecursiva(n / 10);
+    }
+
+    public static String invertirCadena(String cadena) {
+        if (cadena.isEmpty()) {
+            return cadena;
+        }
+        return invertirCadena(cadena.substring(1)) + cadena.charAt(0);
+    }
+}
+
+class OperacionMatematica {
+    private double valor1;
+    private double valor2;
+
+    public void setValor1(double valor1) {
+        this.valor1 = valor1;
+    }
+
+    public void setValor2(double valor2) {
+        this.valor2 = valor2;
+    }
+
+    public double aplicarOperacion(String operacion) {
+        switch (operacion) {
+            case "+":
+                return valor1 + valor2;
+            case "-":
+                return valor1 - valor2;
+            case "*":
+                return valor1 * valor2;
+            case "/":
+                return valor1 / valor2;
+            default:
+                throw new IllegalArgumentException("Operación no válida");
+        }
+    }
+}
+
+class Fraccion {
+    private int numerador;
+    private int denominador;
+
+    public Fraccion(int numerador, int denominador) {
+        this.numerador = numerador;
+        if (denominador == 0) {
+            throw new IllegalArgumentException("El denominador no puede ser cero.");
+        }
+        this.denominador = denominador;
+    }
+
+    public Fraccion sumarFracciones(Fraccion f1, Fraccion f2) {
+        int num = f1.numerador * f2.denominador + f2.numerador * f1.denominador;
+        int den = f1.denominador * f2.denominador;
+        return new Fraccion(num, den);
+    }
+
+    public Fraccion restarFracciones(Fraccion f1, Fraccion f2) {
+        int num = f1.numerador * f2.denominador - f2.numerador * f1.denominador;
+        int den = f1.denominador * f2.denominador;
+        return new Fraccion(num, den);
+    }
+
+    public Fraccion multiplicarFracciones(Fraccion f1, Fraccion f2) {
+        int num = f1.numerador * f2.numerador;
+        int den = f1.denominador * f2.denominador;
+        return new Fraccion(num, den);
+    }
+
+    public Fraccion dividirFracciones(Fraccion f1, Fraccion f2) {
+        if (f2.numerador == 0) {
+            throw new IllegalArgumentException("No se puede dividir por cero.");
+        }
+        int num = f1.numerador * f2.denominador;
+        int den = f1.denominador * f2.numerador;
+        return new Fraccion(num, den);
+    }
+
+    @Override
+    public String toString() {
+        return numerador + "/" + denominador;
+    }
+}
